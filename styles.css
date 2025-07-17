@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
 body {
-    font-family: 'Roboto'; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top-content {
@@ -9,22 +14,44 @@ body {
     color: #F9FAF8;
     padding-top: 12px;
     padding-bottom: 30px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
 }
 
-ul {
-    list-style: none;
+.header {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-a {
+.header-logo {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.header-links {
+    list-style: none;
+    gap: 10px;
+    display: flex;
+}
+
+.header-links a {
     text-decoration: none;
     font-size: 18px;
-    color: #E5E7EB;
+    color: lightgray;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .title {
@@ -32,16 +59,32 @@ a {
     font-weight: bold;
 }
 
-.header-logo {
-    font-size: 24px;
-    font-weight: 900;
-}
-
 .subtext-one {
     font-size: 18px;
     color: #E5E7EB;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.top-image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 6px solid #b4ceff;
+}
+
+.top-button button {
+    border: none;
 }
 
 button {
@@ -52,8 +95,8 @@ button {
     padding-bottom: 4px;
     padding-right: 22px;
     padding-left: 22px;
-    border-radius: 10px;
-    border: none;
+    border-radius: 6px;
+    margin-top: 8px;
 }
 
 .mid-content {
@@ -65,50 +108,90 @@ button {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    margin-bottom: 32px;
+    margin-top: 16px;
 }
 
 .boxes {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 128px;
+}
+
+.box1, .box2, .box3, .box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .box {
   border-radius: 25px;
   border: 2px solid #3882F6;
   padding: 20px;
-  width: 200px;
+  width: 180px;
   height: 150px;
 }
 
 .text {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    width: 180px;
 }
 
 .quote-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #E5E7EB;
+    padding: 70px;
+    margin: 70px;
+    border-radius: 5px;
 }
 
 .quotation {
-    font-size:36px;
-    font-style: 'light italic';
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
     color: #1F2937;
 }
 
 .quote-Of {
+    display: flex;
+    justify-content: flex-end;
     font-size: 18px;
     font-weight: bold;
 }
 
 .sign-up-popup {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #3882F6;
     color: #E5E7EB;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 64px;
+    padding-right: 64px;
+    border-radius: 8px;
 }
 
-.bottom-button {
-    border: 2px solid #E5E7EB;
+.title-two {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.text-two {
+    font-size: 16px;
+}
+
+.bottom-button button {
+  border: 2px solid #E5E7EB;
 }
 
 .footer {
@@ -116,21 +199,5 @@ button {
     padding: 20px;
     display: flex;
     justify-content: center;
+    margin-top: 70px;
 }
-
-/* Hero Main
-text ("this
-website is
-awesome")
-48px #F9FAF8 weight: 900 Hero Secondary text, Header Link Text
-18px #E5E7EB
-Header Logo Text
-24px #F9FAF8
-Button color, call to action background color
-#3882F6
-information header text
-36px #1F2937 weight: 900
-Quote section background color
-#E5E7EB
-Quote text
-36px light italic #1F2937 */
